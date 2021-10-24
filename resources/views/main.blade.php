@@ -18,7 +18,7 @@
 						<div class="card-body">
 							<h5 class="card-title text-info"><b>Transactions Report</b></h5>
 							<p class="card-text">Lists all transactions, purchases, referrals, and estimates the referrer's commission on each order.</p>
-							<a href="/commissions/report" class="btn btn-primary">View Report</a>
+							<a href="/commissions/transactions" class="btn btn-primary">View Report</a>
 						</div>
 					</div>
 				</div>
