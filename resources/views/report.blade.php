@@ -16,10 +16,10 @@
 						</button>
 						<ul class = "dropdown-menu" role="menu" aria-labelledby="tools-menu" bg-light>
 							<li class = "dropdown-header">Available Tools</li> 
-							<li><a class = "dropdown-item" href="/top100">Top 100 Distributors</a></li>
+							<li><a class = "dropdown-item" href="/commissions/top100">Top 100 Distributors</a></li>
 							<li><hr class = "dropdown-divider"/></li>
 							<li class = "dropdown-header">Go back to the main page</li> 
-							<li><a class = "dropdown-item" href="/">Back</a></li>
+							<li><a class = "dropdown-item" href="/commissions">Back</a></li>
 						</ul>
 					</div>
                 </div>
@@ -31,7 +31,7 @@
                 </div>
             </div>
             <hr class = "border border-primary"/>
-            <form method = "post" action = "/report#report">
+            <form method = "post" action = "/commissions/transactions#report">
 			@csrf
 			<div class = "row">
 				<div class = "col-md-4">
@@ -149,7 +149,7 @@
 				</div>
             </div>
             <hr class = "border border-primary"/>
-			<form method = "post" action = "/report#report">
+			<form method = "post" action = "/commissions/transactions#report">
 			@csrf
 			<div class = "row">
 				<div class = "col-md-2">
@@ -204,7 +204,7 @@
 			
 			source: function (query, process) {
 			
-				return $.get('/autocomplete', { q: query }, function (data) {
+				return $.get('/commissions/autocomplete', { q: query }, function (data) {
 				data = $.parseJSON(data);
 				
 				return process(data);
@@ -223,7 +223,7 @@
 
 			// create request
 			$.ajax({
-			url: '/invoice/' + invoice,
+			url: '/commissions/invoice/' + invoice,
 			type: 'get',
 			data: {},
 			success: function(response){ 

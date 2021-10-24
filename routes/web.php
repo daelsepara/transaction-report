@@ -17,6 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [CommissionsController::class, 'index']);
 Route::get('/invoice/{id}', [CommissionsController::class, 'invoice']);
 Route::get('/sales/{id}', [CommissionsController::class, 'sales']);
-Route::match(['get', 'post'], '/report', [CommissionsController::class, 'report']);
+Route::match(['get', 'post'], '/transactions', [CommissionsController::class, 'report']);
 Route::match(['get', 'post'], '/top100', [CommissionsController::class, 'top100']);
 Route::match(['get', 'post'], '/autocomplete', [CommissionsController::class, 'autocomplete']);

@@ -15,10 +15,10 @@
 						</button>
 						<ul class = "dropdown-menu" role="menu" aria-labelledby="tools-menu" bg-light>
 							<li class = "dropdown-header">Available Tools</li> 
-							<li><a class = "dropdown-item" href="/report">Transaction Report</a></li>
+							<li><a class = "dropdown-item" href="/commissions/transactions">Transaction Report</a></li>
 							<li><hr class = "dropdown-divider"/></li>
 							<li class = "dropdown-header">Go back to the main page</li> 
-							<li><a class = "dropdown-item" href="/">Back</a></li>
+							<li><a class = "dropdown-item" href="/commissions">Back</a></li>
 						</ul>
 					</div>
                 </div>
@@ -58,7 +58,7 @@
 				</div>
             </div>
             <hr class = "border border-primary"/>
-			<form method = "post" action "/top100#rankings">
+			<form method = "post" action "/commissions/top100#rankings">
 			@csrf
 			<div class = "row">
 				<div class = "col-md-2">
@@ -108,7 +108,7 @@
 			
 			// create request
 			$.ajax({
-			url: '/sales/' + distributor,
+			url: '/commissions/sales/' + distributor,
 			type: 'get',
 			data: {},
 			success: function(response){ 

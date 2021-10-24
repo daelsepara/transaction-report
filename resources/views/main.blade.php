@@ -18,7 +18,7 @@
 						<div class="card-body">
 							<h5 class="card-title text-info"><b>Transactions Report</b></h5>
 							<p class="card-text">Lists all transactions, purchases, referrals, and estimates the referrer's commission on each order.</p>
-							<a href="/report" class="btn btn-primary">View Report</a>
+							<a href="/commissions/report" class="btn btn-primary">View Report</a>
 						</div>
 					</div>
 				</div>
@@ -27,7 +27,7 @@
 						<div class="card-body">
 							<h5 class="card-title text-success"><b>Top 100 Distributors</b></h5>
 							<p class="card-text">Ranks the distributors based on sales generated, whether purchased by a customer or another distributor.</p>
-							<a href="/top100" class="btn btn-primary">See Rankings</a>
+							<a href="/commissions/top100" class="btn btn-primary">See Rankings</a>
 						</div>
 					</div>
 				</div>
