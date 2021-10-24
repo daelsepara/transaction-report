@@ -95,7 +95,7 @@ class CommissionsController extends Controller
 
 		if (isset($parameters['nextButton'])) {
 			if ($offset + $limit < count($total)) {
-				$offset = isset($parameters['next']) ? $parameters['next'] : 10;
+				$offset = isset($parameters['next']) ? $parameters['next'] : $limit;
 
 				$next = $offset + $limit;
 				$prev = $offset - $limit;
@@ -185,7 +185,7 @@ class CommissionsController extends Controller
 
 		if (isset($parameters['nextButton'])) {
 			if ($offset + $limit < $total) {
-				$offset = isset($parameters['next']) ? $parameters['next'] : 10;
+				$offset = isset($parameters['next']) ? $parameters['next'] : $limit;
 
 				$next = $offset + $limit;
 				$prev = $offset - $limit;
